@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+*.db
+/img/
+TPI_Food_Store.pdf
+UML_Food_Store.svg
+frontend/public/img/cerveza.jpg
+frontend/public/img/coca-cola.jpg
+frontend/public/img/sprite.jpg
+frontend/public/img/papas-cheddar-panceta.jpg
+.pytest_cache/
+_tpi_extract.txt
