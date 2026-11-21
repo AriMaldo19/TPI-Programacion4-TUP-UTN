@@ -91,6 +91,6 @@ También quedan cargadas 4 categorías y 13 productos con stock: pizzas, lomitos
 
 ## Repositorio y video
 
-Repositorio: se completa al publicar el proyecto.
+Repositorio: 
 
-Video de demostración: se completa al momento de la entrega.
+Video de demostración: se encuentra dentro del README en el archivo que contiene el proyecto completo (para mantener la privacidad).
