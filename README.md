@@ -91,6 +91,6 @@ También quedan cargadas 4 categorías y 13 productos con stock: pizzas, lomitos
 
 ## Repositorio y video
 
-Repositorio: 
+Repositorio: https://github.com/AriMaldo19/TPI-Programacion4-TUP-UTN.git
 
 Video de demostración: se encuentra dentro del README en el archivo que contiene el proyecto completo (para mantener la privacidad).
