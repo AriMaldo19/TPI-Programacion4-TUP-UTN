@@ -88,7 +88,7 @@ export function AdminCategoriasPage() {
       </div>
       {categorias.isLoading ? <p>Cargando...</p> : null}
       {categorias.isError ? <EstadoError mensaje="No se pudieron cargar las categorías" onRetry={() => void categorias.refetch()} /> : null}
-      {categorias.data && categorias.data.length === 0 ? <EstadoVacio titulo="Sin categorías" detalle="Creá la primera para armar la carta." /> : null}
+      {categorias.data && categorias.data.length === 0 ? <EstadoVacio titulo="Sin categorías" detalle="Creá la primera para armar el catálogo." /> : null}
       {categorias.data && categorias.data.length > 0 ? (
         <div className="overflow-auto rounded-3xl border border-line bg-paper">
           <table className="w-full text-left text-sm">

@@ -40,7 +40,7 @@ export function CheckoutPage() {
   })
 
   if (items.length === 0) {
-    return <EstadoVacio titulo="No hay nada para confirmar" detalle="Volvé a la carta y armá el carrito." />
+    return <EstadoVacio titulo="No hay nada para confirmar" detalle="Volvé al catálogo y armá el carrito." />
   }
 
   return (

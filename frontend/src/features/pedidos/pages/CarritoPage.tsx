@@ -16,7 +16,7 @@ export function CarritoPage() {
   const usuario = useAuthStore((state) => state.usuario)
 
   if (items.length === 0) {
-    return <EstadoVacio titulo="El carrito está vacío" detalle="Sumá algo de la carta para armar el pedido." />
+    return <EstadoVacio titulo="El carrito está vacío" detalle="Sumá algo del catálogo para armar el pedido." />
   }
 
   return (

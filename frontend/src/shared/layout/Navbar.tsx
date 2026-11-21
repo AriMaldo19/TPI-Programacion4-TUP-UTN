@@ -23,14 +23,11 @@ export function Navbar() {
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3">
         <Link to="/" className="flex items-center gap-3">
           <span className="grid h-10 w-10 place-items-center rounded-2xl bg-clay font-display text-lg text-paper">FS</span>
-          <span>
-            <span className="block font-display text-xl leading-none">Food Store</span>
-            <span className="text-xs tracking-wide text-sage">cocina de barrio</span>
-          </span>
+          <span className="font-display text-xl leading-none">Food Store</span>
         </Link>
         <nav className="flex flex-wrap items-center gap-2">
           <NavLink to="/" className={enlace} end>
-            Carta
+            Catálogo
           </NavLink>
           <NavLink to="/carrito" className={enlace}>
             Carrito ({cantidad})

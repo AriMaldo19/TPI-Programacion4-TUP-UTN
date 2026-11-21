@@ -32,22 +32,23 @@ export function RegisterPage() {
       <p className="mt-1 text-sm text-ink/70">La cuenta se crea con rol de cliente.</p>
       <form
         className="mt-6 space-y-4"
+        autoComplete="off"
         onSubmit={(event) => {
           event.preventDefault()
           void form.handleSubmit()
         }}
       >
         <form.Field name="username" validators={{ onChange: ({ value }) => (value.trim().length >= 3 ? undefined : 'Mínimo 3 caracteres') }}>
-          {(field) => <Input label="Usuario" name={field.name} value={field.state.value} onChange={(event) => field.handleChange(event.target.value)} error={field.state.meta.errors[0]} />}
+          {(field) => <Input label="Usuario" name="nuevo-usuario" autoComplete="off" value={field.state.value} onChange={(event) => field.handleChange(event.target.value)} error={field.state.meta.errors[0]} />}
         </form.Field>
         <form.Field name="full_name" validators={{ onChange: ({ value }) => (value.trim().length >= 2 ? undefined : 'Ingresá tu nombre') }}>
-          {(field) => <Input label="Nombre completo" name={field.name} value={field.state.value} onChange={(event) => field.handleChange(event.target.value)} error={field.state.meta.errors[0]} />}
+          {(field) => <Input label="Nombre completo" name="nombre-nuevo" autoComplete="off" value={field.state.value} onChange={(event) => field.handleChange(event.target.value)} error={field.state.meta.errors[0]} />}
         </form.Field>
         <form.Field name="email" validators={{ onChange: ({ value }) => (value.includes('@') ? undefined : 'Email inválido') }}>
-          {(field) => <Input label="Email" type="email" name={field.name} value={field.state.value} onChange={(event) => field.handleChange(event.target.value)} error={field.state.meta.errors[0]} />}
+          {(field) => <Input label="Email" type="email" name="correo-nuevo" autoComplete="off" value={field.state.value} onChange={(event) => field.handleChange(event.target.value)} error={field.state.meta.errors[0]} />}
         </form.Field>
         <form.Field name="password" validators={{ onChange: ({ value }) => (value.length >= 8 ? undefined : 'Mínimo 8 caracteres') }}>
-          {(field) => <Input label="Contraseña" type="password" name={field.name} value={field.state.value} onChange={(event) => field.handleChange(event.target.value)} error={field.state.meta.errors[0]} />}
+          {(field) => <Input label="Contraseña" type="password" name="clave-nueva" autoComplete="new-password" value={field.state.value} onChange={(event) => field.handleChange(event.target.value)} error={field.state.meta.errors[0]} />}
         </form.Field>
         {error ? <p className="text-sm text-clay-dark">{error}</p> : null}
         <Button type="submit" className="w-full">
